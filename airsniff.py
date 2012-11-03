@@ -20,9 +20,6 @@ Example for vk.com: airsniff.py 10 \"remixsid=[a-z0-9]{68}"\
 channel = sys.argv[1]
 pattern = sys.argv[2]
 
-print "Pattern is " + pattern
-
-
 
 
 # kill loop and airport process when press Ctrl+C
