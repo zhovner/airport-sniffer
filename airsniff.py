@@ -51,7 +51,7 @@ if (AirportObj.poll() != None):
 	print "\nError!\nTry run /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport en1 scan" 
 	sys.exit()
 
-print "Now run in loop:  grep -aEo " + pattern + "/tmp/*.cap"
+print "Now run in loop:  grep -aEo " + pattern + " /tmp/*.cap"
 print "Press Ctrl+C to abort."
 while True:
 	print ('...Dump size: '),
