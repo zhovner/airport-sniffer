@@ -1,4 +1,4 @@
-This is quite simple script. You can do all this stuff manually without this script.
+This is quite simple script. You can do all this stuff manually without the script.
 
 It use built-in Airport Extreme card for grab your pattern from wireless traffic.
 
