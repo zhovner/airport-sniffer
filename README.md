@@ -1,6 +1,6 @@
 This is quite simple script. You can do all this stuff manually without the script.
 
-It use built-in Airport Extreme card for grab your pattern from wireless traffic.
+It uses built-in Airport Extreme card for grab your pattern from wireless traffic.
 
 It can be used **only in open Wi-Fi network**.
 
