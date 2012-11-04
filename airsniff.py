@@ -20,6 +20,7 @@ Example for vk.com: airsniff.py 10 \"remixsid=[a-z0-9]{68}"\
 channel = sys.argv[1]
 pattern = sys.argv[2]
 
+print "Pattern is " + pattern
 
 
 # kill loop and airport process when press Ctrl+C
@@ -54,7 +55,8 @@ print "Now run in loop:  grep -aEo " + pattern + "/tmp/*.cap"
 print "Press Ctrl+C to abort."
 while True:
 	print '~~~~~~~~~~~~'
-	GrepObj = subprocess.Popen(['grep','-aEo', pattern, '/tmp/*.cap'], stdout=subprocess.PIPE)
-	matches = GrepObj.stdout.read()
-	print matches
+	GrepObj = subprocess.call(['grep -aEo /tmp/*.cap', shell=True)
+#	GrepObj = subprocess.Popen(['grep','-aEo', pattern, '/tmp/*.cap'], stdout=subprocess.PIPE)
+#	matches = GrepObj.stdout.read()
+#	print matches
 	time.sleep(10)
