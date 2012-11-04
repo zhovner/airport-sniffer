@@ -8,9 +8,11 @@ It can be used **only in open Wi-Fi network**.
 
 * Swith Airport card into monitor mode on selected channel.
 ```sudo "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport" en0 sniff 10```
-Where en0 - Aiport card, 10 - channel
+Where en0 - Aiport card, 10 - channel. It will write dump in .cap file localted in /tmp/.
 
 To find which channel use your network hold ```Alt``` and click on wifi icon:
 
 ![CHANNEL](http://cdn.zhovner.com/forever/wifi_channel.png)
+
+* Match your regexp in .cap file in cycle and exclude duplicates strings.
 
