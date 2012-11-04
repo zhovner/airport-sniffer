@@ -20,9 +20,9 @@ To find which channel use your network hold ```Alt``` and click on wifi icon:
 
 ```sudo airsniff.py <channell> <\"pattern\">````
 
- ** <channell> ** — wifi channel
+ **channell** — wifi channel
 
- **<\"pattern\">** — regexp that will grep /tmp/*.cap file. Quotes and backslashes required!
+ **\"pattern\"** — regexp that will grep /tmp/*.cap file. Quotes and backslashes required!
 
 Example for vk.com:
 
