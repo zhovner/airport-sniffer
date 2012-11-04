@@ -11,5 +11,6 @@ It can be used **only in open Wi-Fi network**.
 Where en0 - Aiport card, 10 - channel
 
 To find which channel use your network hold ```Alt``` and click on wifi icon:
+
 ![CHANNEL](http://cdn.zhovner.com/forever/wifi_channel.png)
 
