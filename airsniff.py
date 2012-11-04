@@ -55,7 +55,7 @@ print "Now run in loop:  grep -aEo " + pattern + " /tmp/*.cap"
 print "Press Ctrl+C to abort."
 while True:
 	print ('...Dump size: '),
-	lsObj = subprocess.call("ls -lah /tmp/*.cap | awk '{print $5}'" % pattern, shell=True)
+	lsObj = subprocess.call("ls -lah /tmp/*.cap | awk '{print $5}'", shell=True)
 	print ''
 	GrepObj = subprocess.call('grep -aEo %s /tmp/*.cap' % pattern, shell=True)
 #	GrepObj = subprocess.Popen(['grep','-aEo', pattern, '/tmp/*.cap'], stdout=subprocess.PIPE)
