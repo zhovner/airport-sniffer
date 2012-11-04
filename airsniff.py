@@ -54,7 +54,9 @@ if (AirportObj.poll() != None):
 print "Now run in loop:  grep -aEo " + pattern + "/tmp/*.cap"
 print "Press Ctrl+C to abort."
 while True:
-	print '~~~~~~~~~~~~'
+	print ('...Dump size: '),
+	lsObj = subprocess.call("ls -lah /tmp/*.cap | awk '{print $5}'" % pattern, shell=True)
+	print ''
 	GrepObj = subprocess.call('grep -aEo %s /tmp/*.cap' % pattern, shell=True)
 #	GrepObj = subprocess.Popen(['grep','-aEo', pattern, '/tmp/*.cap'], stdout=subprocess.PIPE)
 #	matches = GrepObj.stdout.read()
