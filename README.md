@@ -16,3 +16,13 @@ To find which channel use your network hold ```Alt``` and click on wifi icon:
 
 * Match your regexp in .cap file in cycle and exclude duplicates strings.
 
+#### Usage:
+
+```sudo airsniff.py <channell> <\"pattern\">````
+
+<channell> - wifi channel
+<\"pattern\"> - regexp that will grep /tmp/*.cap file. Quotes and backslashes required!
+
+Example for vk.com: 
+```airsniff.py 10 \"remixsid=[a-z0-9]{68}\"```
+
