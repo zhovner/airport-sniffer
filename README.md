@@ -18,7 +18,7 @@ To find out what channel number is used on your network hold ```Alt``` and click
 
 #### Usage:
 
-```sudo airsniff.py <channel> <"pattern">````
+```sudo airsniff.py <channel> <"pattern">```
 
  **channel** — wifi channel
 
