@@ -63,7 +63,7 @@ st_results = os.stat(file_path)st_size = st_results[6]file.seek(st_size)
 print 'Now run in loop:  grep -aEo "' + pattern + '" ' + file_path
 print "Press Ctrl+C to abort."
 while True:
-	where = file.tell()	line = file.readline()	if not line:		time.sleep(10)		file.seek(where)	else:#		print "File size: " + str(os.path.getsize(file_path)/1000) + " KB"		match = re.search(pattern, line )		if(match != None):
+	where = file.tell()	line = file.readline()	if not line:		time.sleep(10)		file.seek(where)	else:# 		print "File size: " + str(os.path.getsize(file_path)/1000) + " KB"		match = re.search(pattern, line )		if(match != None):
 			if match in showed:
 				pass
 			else:
