@@ -22,7 +22,7 @@ To find out what channel number is used on your network hold ```Alt``` and click
 
  **channel** — wifi channel
 
- **\"pattern\"** — regexp that will grep /tmp/*.cap file. Quotes and backslashes required!
+ **"pattern"** — regexp that will grep /tmp/*.cap file. Quotes and backslashes required!
 
 Example for vk.com:
 
