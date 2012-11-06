@@ -43,7 +43,7 @@ rm = subprocess.call("rm /tmp/*.cap", shell=True)
 
 # Switch airport into monitor and put process in backgroung
 # If you exit non clear airport process still be run in background
-print "Switch airport into monitor mode on channel " + channel  
+print "Switching airport into monitor mode on channel " + channel  
 AirportObj = subprocess.Popen(['/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport','sniff','10'], stdout=subprocess.PIPE)
 
 time.sleep(2)
@@ -62,7 +62,7 @@ st_results = os.stat(file_path)
 st_size = st_results[6]
 file.seek(st_size)
 
-print 'Now run in loop:  grep -aEo "' + pattern + '" ' + file_path
+print 'Now running in loop:  grep -aEo "' + pattern + '" ' + file_path
 print "Press Ctrl+C to abort."
 while True:
 	where = file.tell()
