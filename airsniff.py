@@ -44,7 +44,7 @@ rm = subprocess.call("rm /tmp/*.cap", shell=True)
 # Switch airport into monitor and put process in backgroung
 # If you exit non clear airport process still be run in background
 print "Switching airport into monitor mode on channel " + channel  
-AirportObj = subprocess.Popen(['/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport','sniff','10'], stdout=subprocess.PIPE)
+AirportObj = subprocess.Popen(['/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport','sniff',channel], stdout=subprocess.PIPE)
 
 time.sleep(2)
 
