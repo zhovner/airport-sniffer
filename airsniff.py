@@ -72,9 +72,11 @@ while True:
 		file.seek(where)
 	else:
 # 		print "File size: " + str(os.path.getsize(file_path)/1000) + " KB"
-		match = re.search(pattern, line )
+		match = re.findall(pattern, line )
 		if(match != None):
-			if match in showed:
-				pass
-			else:
-				print match.group()
+			for string in match:
+				if string in showed:
+					pass
+				else:
+					print string
+					showed.append(string)
