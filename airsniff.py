@@ -16,7 +16,7 @@ if len(sys.argv) == 1:
 Usage: airsniff.py <channel> <\\"pattern\\">
 <channell> - wifi channel
 <"pattern"> - regexp that will grep /tmp/*.cap file. Quotes required!
-Example for vk.com: ./airsniff.py 10 "remixsid=[a-f0-9]{68}"
+Example for vk.com: ./airsniff.py 10 "remixsid=[a-f0-9]{53}"
 ''')
 	sys.exit();
 
