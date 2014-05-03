@@ -6,7 +6,7 @@ It can be used **only in open Wi-Fi network**.
 
 #### How it works: 
 
-* Swithes Airport card into monitor mode on selected channel.
+* Turn Airport card into monitor mode on selected channel.
 ```sudo "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport" en0 sniff 10```
 Where en0 - Aiport card, 10 - channel. It will write dump in .cap file localted in /tmp/.
 
