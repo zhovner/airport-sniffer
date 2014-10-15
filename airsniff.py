@@ -50,7 +50,7 @@ time.sleep(2)
 
 if (AirportObj.poll() != None):
 	print AirportObj.poll()	
-	print "\nError!\nTry run /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport en1 scan" 
+	print "\nError!\nTry run /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport scan" 
 	sys.exit()
 
 file_path = glob.glob('/tmp/*.cap')[0]
