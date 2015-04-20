@@ -14,7 +14,7 @@ Where en0 - Aiport card, 10 - channel. It will write dump in .cap file localted 
 
 To find out what channel number is used on your network hold ```Alt``` and click on wifi icon:
 
-![CHANNEL](http://cdn.zhovner.com/forever/wifi_channel.png)
+![CHANNEL](http://i.imgur.com/oeZrN1m.png)
 
 * In cycle matches your regexp in .cap file and excluding duplicate strings.
 
