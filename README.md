@@ -8,9 +8,9 @@ It can be used **only in open Wi-Fi network**.
 
 * Turn Airport card into monitor mode on selected channel.
 
-```sudo "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport" en0 sniff 10```
+```sudo "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport" sniff 10```
 
-Where en0 - Aiport card, 10 - channel. It will write dump in .cap file localted in /tmp/.
+It will write dump in .cap file localted in /tmp/.
 
 To find out what channel number is used on your network hold ```Alt``` and click on wifi icon:
 
