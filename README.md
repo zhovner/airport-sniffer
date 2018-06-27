@@ -1,8 +1,8 @@
 This is quite simple script. You can do all this stuff manually without the script.
-
 It uses Airport Extreme card for grab your pattern from wireless traffic.
-
 It can be used **only in open Wi-Fi network**.
+
+Also try [Airtool.app](https://www.adriangranados.com/apps/airtool) for just dumping Wi-Fi traffic.
 
 #### How it works: 
 
